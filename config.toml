@@ -1,0 +1,129 @@
+# CareerCanvas theme – example config
+# Copy sections into your site config.toml and replace placeholders.
+# For running the site, see the Portfolio repo README: https://github.com/felipecordero/felipecordero.github.io
+
+baseURL = "https://portfolio.brieuc-courapie.fr"
+locale = "fr-fr"
+title = "Brieuc Courapié"
+theme = "careercanvas"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.fr]
+    contentDir = "content/fr"
+    label = "Français"
+    locale = "fr-fr"
+    weight = 1
+    [languages.fr.params]
+      resume_url = "/files/CV_2026-07-27_Brieuc_COURAPIÉ.pdf"
+      tagline = "Developpeur fullstack. Diplomé d'un master Lead Dev"
+      hero_description = "Fort de trois ans d'experience en alternance dans le developpement web, je suis a la recherche de mon premier emploi dans ce domaine."
+      hero_location = "Pays de la Loire, France"
+  # Add more [languages.xx] blocks for other languages (es, fr, etc.)
+
+[build]
+  writeStats = true
+
+[params]
+  firstName = "Brieuc"
+  lastName = "Courapie"
+  name = "Brieuc Courapié"
+  email = "brieuc.courapie@free.fr"
+  profile_image = "/images/pp.jpg"
+  author = "Brieuc Courapié"
+  og_image = "/images/pp.jpg"
+  description = "Portfolio de Brieuc Courapie, developpeur fullstack avec 3 ans d'experience en alternance."
+  linkedin_url = "https://www.linkedin.com/in/brieuc-courapié/"
+  linkedin_text = "linkedin.com/in/brieuc-courapie"
+  github_url = "https://github.com/Brieuco44"
+  github_text = "github.com/Brieuco44"
+  calendly_url = ""
+  calendly_height = "700px"
+  copyright = "Brieuc Courapié"
+  resume_url = "/files/CV_2026-07-27_Brieuc_COURAPIÉ.pdf"
+  resume_label = "Voir mon CV"
+  sectionPagesMenu = "main"
+  formspreeendpoint = ""
+  pexelsapikey = ""
+
+  [[params.social]]
+    icon = "linkedin-in"
+    url = "https://www.linkedin.com/in/brieuc-courapié/"
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/Brieuco44"
+  # [[params.social]]
+  #   icon = "calendly"
+  #   url = "https://calendly.com/yourlink"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "A propos"
+    url = "#about"
+    weight = 10
+  [[menu.main]]
+    name = "Competences"
+    url = "#skills"
+    weight = 20
+  [[menu.main]]
+    name = "Experience"
+    url = "#experience"
+    weight = 30
+  [[menu.main]]
+    name = "Technique"
+    url = "#technical"
+    weight = 40
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[server]
+  [[server.headers]]
+    for = "/**/*.css"
+    [server.headers.values]
+      Content-Type = "text/css"
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+  [security.node.permissions]
+    disable = true
+
+# One palette is picked at random per page load. Each needs name, main_color, second_color, third_color (hex).
+[params.color_palettes]
+  [[params.color_palettes.palette]]
+    name = "professional"
+    main_color = "#474A51"
+    second_color = "#E52521"
+    third_color = "#3CB043"
+  [[params.color_palettes.palette]]
+    name = "ocean"
+    main_color = "#1E40AF"
+    second_color = "#06B6D4"
+    third_color = "#10B981"
+  [[params.color_palettes.palette]]
+    name = "steel"
+    main_color = "#374151"
+    second_color = "#6B7280"
+    third_color = "#10B981"
+  [[params.color_palettes.palette]]
+    name = "slate"
+    main_color = "#475569"
+    second_color = "#0EA5E9"
+    third_color = "#F97316"
+
+# Pexels hero backgrounds
+[params.pexels]
+  queries = ["long span bridges", "skyscrapers", "sky and clouds"]

@@ -1,0 +1,22 @@
+# Map company keys to one logo image.
+# Path must be inside static/images/companies/
+# Example:
+# your-company:
+#   src: /images/companies/your-company.png
+#   alt: Your Company
+
+gruau:
+  src: /images/companies/gruau.png
+  alt: Gruau
+
+fleuron-anjou:
+  src: /images/companies/fleuron.png
+  alt: Fleuron
+
+edf:
+  src: /images/companies/edf.png
+  alt: EDF
+
+qos-energy:
+  src: /images/companies/qos.png
+  alt: QOS Energy
