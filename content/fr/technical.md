@@ -1,7 +1,7 @@
 ---
 title: "Technique"
 type: "homepage"
-intro: "Technologies et outils utilises en alternance, en stage et en projet."
+intro: "Technologies et outils utilisés en alternance, en stage et en projet."
 technical_groups:
   - title: "Langages"
     skills:
@@ -19,9 +19,10 @@ technical_groups:
         devicon_name: "java"
       - name: "C#"
         devicon_name: "csharp"
-
   - title: "Frameworks et CMS"
     skills:
+      - name: "Symfony"
+        devicon_name: "symfony"
       - name: "Bootstrap"
         devicon_name: "bootstrap"
       - name: "Tailwind CSS"
@@ -32,10 +33,12 @@ technical_groups:
         devicon_name: "laravel"
       - name: "YII2"
         icon: "layer-group"
-    #   - name: .NET
-    #     devicon: "dotnet"
+      - name: .NET
+        devicon_name: "dotnetcore"
       - name: "Chart.js"
         icon: "chart-line"
+      - name: "Prestashop"
+        devicon_name: 'prestashop'
 
   - title: "Donnees et Outils"
     skills:
@@ -55,4 +58,6 @@ technical_groups:
         icon: "arrows-spin"
       - name: "CI/CD"
         icon: "code-branch"
+      - name: "docker"
+        devicon_name: "docker" 
 ---

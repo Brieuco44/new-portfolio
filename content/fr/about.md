@@ -2,7 +2,7 @@
 title: "A propos"
 type: "homepage"
 intro: >-
-  Je m'appelle Brieuc Courapie, developpeur fullstack. Fort de trois ans d'experience en alternance dans le developpement web, je suis a la recherche de mon premier emploi dans ce domaine.
+  Je m'appelle Brieuc Courapié, développeur fullstack. Je suis à la recherche de mon premier emploi dans ce domaine.
 study: >-
   Mon parcours de formation: Master Lead Dev (IIA Laval, 2024-2026), Licence Informatique (IIA Laval, 2023-2024), BTS SIO option SLAM (Lycee Chevrollier Angers, 2021-2023), Baccalaureat general (Lycee Jacques Prevert Savenay, 2018-2021).
 passion_title: "Ce qui me motive"

@@ -2,85 +2,61 @@
 # Copy sections into your site config.toml and replace placeholders.
 # For running the site, see the Portfolio repo README: https://github.com/felipecordero/felipecordero.github.io
 
-baseURL = "https://portfolio.brieuc-courapie.fr"
-locale = "fr-fr"
-title = "Brieuc Courapié"
+baseURL = "https://yoursite.com"
+languageCode = "en-us"
+title = "Your Name"
 theme = "careercanvas"
-defaultContentLanguage = "fr"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [languages]
-  [languages.fr]
-    contentDir = "content/fr"
-    label = "Français"
-    locale = "fr-fr"
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
     weight = 1
-    [languages.fr.params]
-      resume_url = "/files/CV_2026-07-27_Brieuc_COURAPIÉ.pdf"
-      tagline = "Développeur fullstack. Diplomé d'un master Lead Dev"
-      hero_description = "Fort de trois ans d'expérience en alternance dans le développement web, je suis à la recherche de mon premier emploi dans ce domaine."
-      hero_location = "Pays de la Loire, France"
+    [languages.en.params]
+      tagline = "First sentence. Second sentence cycles in the same block (wraps to ~2 lines)."
+      hero_description = "Short bio for the hero section."
+      hero_location = "City, Country"
+      collab_tags = ["Tag 1", "Tag 2", "Tag 3"]
   # Add more [languages.xx] blocks for other languages (es, fr, etc.)
 
 [build]
   writeStats = true
 
 [params]
-  firstName = "Brieuc"
-  lastName = "Courapié"
-  name = "Brieuc Courapié"
-  email = "brieuc.courapie@free.fr"
-  profile_image = "/images/pp.jpg"
-  author = "Brieuc Courapié"
-  og_image = "/images/pp.jpg"
-  description = "Portfolio de Brieuc Courapié, développeur fullstack."
-  linkedin_url = "https://www.linkedin.com/in/brieuc-courapié/"
-  linkedin_text = "linkedin.com/in/brieuc-courapié"
-  github_url = "https://github.com/Brieuco44"
-  github_text = "github.com/Brieuco44"
+  name = "Your Name"
+  email = "your@email.com"
+  profile_image = "/images/your-profile.jpg"
+  author = "Your Name"
+  og_image = "images/your-og.png"
+  description = "One-line site description for SEO."
+  linkedin_url = "https://linkedin.com/in/yourprofile"
+  linkedin_text = "linkedin.com/in/yourprofile"
+  github_url = "https://github.com/yourusername"
+  github_text = "github.com/yourusername"
   calendly_url = ""
   calendly_height = "700px"
-  copyright = "Brieuc Courapié"
-  resume_url = "/files/CV_2026-07-27_Brieuc_COURAPIÉ.pdf"
-  resume_label = "Voir mon CV"
+  copyright = "© 2025 | Your Name"
+  resume_url_en = "/files/your-cv-en.pdf"
+  resume_url_fr = "/files/your-cv-fr.pdf"
+  resume_label = "View CV"
   sectionPagesMenu = "main"
   formspreeendpoint = ""
   pexelsapikey = ""
 
   [[params.social]]
     icon = "linkedin-in"
-    url = "https://www.linkedin.com/in/brieuc-courapié/"
+    url = "https://linkedin.com/in/yourprofile"
   [[params.social]]
     icon = "github"
-    url = "https://github.com/Brieuco44"
+    url = "https://github.com/yourusername"
   # [[params.social]]
   #   icon = "calendly"
   #   url = "https://calendly.com/yourlink"
 
 [taxonomies]
   tag = "tags"
-
-[menu]
-  [[menu.main]]
-    name = "A propos"
-    url = "#about"
-    weight = 10
-  [[menu.main]]
-    name = "Competences"
-    url = "#skills"
-    weight = 20
-  [[menu.main]]
-    name = "Experience"
-    url = "#experience"
-    weight = 30
-  [[menu.main]]
-    name = "Technique"
-    url = "#technical"
-    weight = 40
-  [[menu.main]]
-    name = "Contact"
-    url = "#contact"
-    weight = 60
 
 [markup]
   [markup.goldmark]
@@ -98,8 +74,6 @@ defaultContentLanguageInSubdir = false
 [security]
   [security.funcs]
     getenv = ['^HUGO_', '^CI$']
-  [security.node.permissions]
-    disable = true
 
 # One palette is picked at random per page load. Each needs name, main_color, second_color, third_color (hex).
 [params.color_palettes]
